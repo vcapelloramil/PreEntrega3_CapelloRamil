@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="intro">
+    <h1>BEPXC - Apple Store Reseller</h1>
+  </header>
+  <main>
+    <div class="container">
+      <h2>BEST SELLERS</h2>
+      <div id="alerts"></div>
+      <div class="productCont">
+        <div class="producto">
+          <h3 class="productoNombre">iMac</h3>
+          <img src="./img/imacCombo2.png" alt="">
+          <p>iMac 24 inch - M1 Chip</p>
+          <p class="precio">$1079.99</p>
+          <button class="addToCart">Add To Cart</button>
+        </div>
+        <div class="producto">
+          <h3 class="productoNombre">iPad</h3>
+          <img src="./img/ipadGens2.png" alt="">
+          <p>iPad 11 inch - 128gb</p>
+          <p class="precio">$650.99</p>
+          <button class="addToCart">Add To Cart</button>
+        </div>
+        <div class="producto">
+          <h3 class="productoNombre">iPhone</h3>
+          <img src="./img/iphoneColors.png" alt="">
+          <p>iPhone 13 - 256gb - A13</p>
+          <p class="precio">$850.50</p>
+          <button class="addToCart">Add To Cart</button>
+        </div>
+      </div>
+      <div class="cart-container">
+        <h2>Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+          </thead>
+          <tbody id="cartTabla">
+          </tbody>
+        </table>
+        <hr>
+        <table id="cartTotals">
+          <tr>
+            <td><strong>Items</strong></td>
+            <td><strong>Total</strong></td>
+          </tr>
+          <tr>
+            <td>x <span id="itemsQuantity">0</span></td>
+            <td>$<span id="total">0</span></td>
+          </tr>
+        </table>
+        <div class="cart-buttons">
+          <button id="emptyCart">Empty Cart</button>
+          <button id="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html>
