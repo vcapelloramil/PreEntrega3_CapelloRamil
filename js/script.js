@@ -9,6 +9,17 @@ let btns = document.getElementsByClassName('addToCart');
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener('click', function () { addToCart(this); });
 }
+const btn = document.querySelector('#checkout')
+btn.addEventListener('click', () => {
+    Swal.fire({
+        title: 'Checkout',
+        text: 'Click continue to see Shipping terms',
+        icon: 'success',
+        confirmButtonText: 'Continue'
+
+
+})
+})
 
 //* funcion ADD TO CART*/
 
